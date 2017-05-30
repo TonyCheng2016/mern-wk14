@@ -15,7 +15,8 @@ module.exports = {
     contentBase:        './public',
     inline:             true,
     progress:           true,
-    port:               3000
+    port:               3000,
+    hot: true
   },
   module: {
     loaders: [{
@@ -26,5 +27,13 @@ module.exports = {
         presets: ['es2015', 'react']
       }
     }]
-  }
+  },
+    resolve: {
+    extensions: ['', '.js']
+  },
+    plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
