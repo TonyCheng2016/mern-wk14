@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
@@ -10,12 +11,12 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    color:              true,
+    color: true,
     historyApiFallback: true,
-    contentBase:        './public',
-    inline:             true,
-    progress:           true,
-    port:               3000,
+    contentBase: './public',
+    inline: true,
+    progress: true,
+    port: 3000,
     hot: true
   },
   module: {
@@ -28,10 +29,10 @@ module.exports = {
       }
     }]
   },
-    resolve: {
+  resolve: {
     extensions: ['', '.js']
   },
-    plugins: [
+  plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
