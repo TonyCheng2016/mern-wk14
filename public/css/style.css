@@ -6,3 +6,14 @@ footer {
       color: white;
       padding: 15px;
 }
+#bookdetail{
+  margin-top: 20px;
+   padding: 15px
+}
+img {
+    display:block;
+    margin:auto;
+}
+#headtext{
+  color:gold;
+}

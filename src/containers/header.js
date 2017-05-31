@@ -6,7 +6,7 @@ class HeaderInfo extends Component {
     return (
         <div className="row">
           <footer className="container-fluid col-md-12">
-            <p className="text-white text-center">Choose your Book</p>
+            <h2 className=" text-center" id="headtext">Golden Book Store</h2>
           </footer>
         </div>
     );
