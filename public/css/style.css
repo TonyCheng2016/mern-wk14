@@ -1,6 +1,9 @@
 ul li {
   cursor: pointer;
 }
+ul li:hover{
+  background: DarkOrange;
+}
 footer {
       background-color: #555;
       color: white;
